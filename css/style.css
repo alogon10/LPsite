@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-family: Helvetica, "游ゴシック", sans-serif;
+}
+.head{
+  display:flex;
+  justify-content: space-between;
+  position:sticky;
+}
+.menu{
+  position:relative;
+  left:5vw;
+  font-size:50px;
+  color: rgb(0 0 139);
+  font-weight:bold;
+}
+.link a{
+  position:relative;
+  top:30px;
+  right:70px;
+  display: inline-block;
+  justify-content: flex-end;
+  font-size: 32px;
+  color: rgb(0 0 139);
+  margin-left:50px;
+  font-weight: bold;
+}
+img{
+position:relative;
+width:45vw;
+top:7vh;
+right:2vw;
+z-index:100;
+}
+p{
+  font-size: 70px;
+}
+.box{
+  background-color: rgb(0, 0, 139);
+  width:68vw;
+  height:15vh
+}
+.text{
+  position:relative;
+  top:-70px;
+  left:5vw;
+}
