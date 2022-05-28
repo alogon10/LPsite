@@ -1,50 +1,337 @@
 * {
   box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
 }
-a {
-  text-decoration: none;
-  font-family: Helvetica, "游ゴシック", sans-serif;
-}
-.head{
+.header-ttl{
   display:flex;
   justify-content: space-between;
-  position:sticky;
+  word-spacing: 30px;
+  margin:0 50px 0 50px;
 }
-.menu{
-  position:relative;
-  left:5vw;
-  font-size:50px;
-  color: rgb(0 0 139);
-  font-weight:bold;
+.logo{
+  width:8%;
+  height:8%;
 }
-.link a{
-  position:relative;
-  top:30px;
-  right:70px;
-  display: inline-block;
-  justify-content: flex-end;
-  font-size: 32px;
-  color: rgb(0 0 139);
-  margin-left:50px;
-  font-weight: bold;
+.header-nav li{
+  display:inline;
+  list-style: none;
+  font-size:16px;
+
 }
-img{
-position:relative;
-width:45vw;
-top:7vh;
-right:2vw;
-z-index:100;
+a{
+  text-decoration: none;
 }
-p{
-  font-size: 70px;
+/* eyecatch */
+.eyecatch{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
-.box{
-  background-color: rgb(0, 0, 139);
-  width:68vw;
-  height:15vh
+.eyecatch-img-container{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.firstview{
+  width:60vw;
+  display:block;
+  margin:0 0 0 auto;
+  padding:0 0 0 auto;
+}
+.eyecatch{
+  text-align:right;
+  position: relative;
 }
 .text{
+  text-align:left;
+  position:absolute;
+  top:200px;
+  left:300px;
+}
+span{
+  color:rgb(0, 180, 252);
+  font-family: 'Indie Flower', cursive;
+}
+h1{
+  color:rgb(167, 13, 38);
+  font-size: 70px;
+  font-family: 'Indie Flower', cursive;
+  margin:20px 0;
+}
+.top{
+  color:rgb(167, 13, 38);
+  font-size: 32px;
+}
+.caption{
+  color:gray;
+}
+/* eyecatchここまで */
+/* news */
+.news{
+  position:absolute;
+  left:400px;
+  margin:100px 0;
+}
+h3{
+  font-size: 24px;
+  display:block;
+  font-family: 'Indie Flower', cursive;
+  display: block;
+  margin-bottom: 0px;
+  color: rgb(180, 51, 72);
+}
+h2{
+  font-size: 24px;
+  color:rgb(90, 90, 90);
+}
+.news-container{
   position:relative;
-  top:-70px;
-  left:5vw;
+}
+.news-table{
+  border-top:solid 2px gray;
+  border-bottom:solid 2px gray;
+  line-height: 32px;
+  border-collapse: separate;
+  border-spacing: 12px 0px;
+  width: 40vw;
+}
+tr{
+  border-bottom: solid 1px rgba(128, 128, 128, 0.295);
+}
+.news-icon{
+  background-color: rgb(180, 51, 72);
+  border-radius: 5px;
+  color:white;
+  font-size: 12px;
+  text-align: center;
+}
+/* newsここまで */
+/* About */
+.about-container{
+  margin: 500px auto;
+  margin-bottom: 0;
+  background-color: rgba(214, 214, 214, 0.555);
+  text-align: center;
+  width:80vw;
+  line-height: 32px;
+}
+.about-content{
+  display: flex;
+  justify-content: space-around;
+}
+.about-text{
+  text-align: left;
+  margin:auto 0;
+}
+.about-img{
+  width:400px;
+}
+/* Aboutここまで */
+/* Service */
+.service-container{
+  position: relative;
+}
+.service{
+  position:absolute;
+  top:60px;
+  left:250px;
+}
+.service-grid{
+  display: grid;
+  grid-template-rows: 230px 230px;
+  grid-template-columns: 30vw 30vw;
+}
+.service-img{
+  width:150px;
+  margin:0 auto;
+}
+.service-text{
+  display:inline-block;
+  margin: 0 auto;
+  width:18vw;
+  text-align:left;
+}
+.service-card1{
+  background-color:rgb(255, 0, 85);
+  color:white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row:1/3;
+  padding:100px 0;
+}
+.service-card2 {
+  background-color: rgb(255, 85, 141);
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.service-card3 {
+  background-color: rgb(255, 187, 209);
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+/* Serviceここまで */
+/* Blog */
+.blogttl{
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+.blog{
+  margin: 850px auto 100px;
+  width: 95vw;
+  position:relative;
+}
+.blog-card {
+  width: 240px;
+  position: relative;
+}
+.blog-card-img img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20px 20px 0 0;
+}
+.card-content-cat {
+  position: absolute;
+  line-height: 30px;
+  z-index: 10;
+  color: white;
+  background-color: rgb(255, 0, 85);
+  width: 80px;
+  text-align: center;
+  border-radius: 20px 0 0 0;
+}
+.card-content-tag {
+  display: flex;
+  justify-content: space-around;
+}
+.card-content {
+  position: absolute;
+  top: 180px;
+  width: 95%;
+  line-height: 25px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  position: absolute;
+  left:180px;
+
+}
+.background-box {
+  background-color: rgba(214, 214, 214, 0.555);
+  height: 400px;
+  width: 80%;
+  margin: -100px auto;
+}
+.backnumber {
+  font-size: 24px;
+  background-color: white;
+  border: solid 3px rgb(255, 0, 85);
+  border-radius: 30px;
+  padding: 10px 40px;
+  display:inline-block;
+  margin:50px 40vw 0 40vw;
+}
+/* Blogここまで */
+/* company */
+.company-container{
+  position:relative;
+}
+.company{
+  margin-top:200px;
+  margin-left:500px;
+  line-height: 40px;
+}
+.company-table {
+  text-align: left;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 12px 0px;
+  width: 40vw;
+}
+.company-table-td,.company-table-th{
+  border:1px solid gray;
+  text-align: left;
+  padding-right: 250px;
+}
+.company-table-th{
+  background-color: #dedede;
+  padding-right: 100px;
+}
+/* companyここまで */
+/* 採用情報/社員インタビュー */
+.rec-itv{
+  margin-top:100px;
+  display: flex;
+  justify-content: center;
+}
+.recruit{
+  font-size: 32px;
+  color:white;
+  font-weight: bold;
+  background-image: url(../img/recruit.png);
+  background-size: contain;
+  width:594px;
+  height:264px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-align:center;
+  line-height: 264px;
+}
+.interview{
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  background-image: url(../img/interview.png);
+  background-size: contain;
+  width: 594px;
+  height:264px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 264px;
+}
+/* 採用情報/社員インタビュー */
+/* mail */
+.mail{
+  display:block;
+  width:350px;
+  margin:100px auto;
+}
+.mail-arrow{
+  width:2px;
+  height:30px;
+  background-color: rgb(255, 0, 85);
+  margin: 30px auto;
+}
+.mail-box{
+  position:relative;
+  text-align: center;
+  display: block;
+  width: 250px;
+  background-color: rgb(255, 0, 85);
+  padding:20px 70px;
+  color:white;
+  margin: 30px auto;
+  border-radius: 30px;;
+}
+.mail-box-img{
+  width:30px;
+  position:absolute;
+  right:200px;
+  bottom:12px;
+}
+/* mail */
+.footer-small{
+  display: block;
+  text-align: center;
+  background-color: rgba(214, 214, 214, 0.555);
+  line-height:40px;
 }
